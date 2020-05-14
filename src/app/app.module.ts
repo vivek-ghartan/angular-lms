@@ -15,6 +15,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CorporateComponent } from './corporate/corporate.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
+import { AwsComponent } from './aws/aws.component';
+import { ConsultingComponent } from './consulting/consulting.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { CoursesComponent } from './courses/courses.component';
+import { FaqComponent } from './faq/faq.component';
+import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +28,13 @@ import { NavigationComponent } from './shared/navigation/navigation.component';
     HomepageComponent,
     AboutUsComponent,
     CorporateComponent,
-    NavigationComponent
+    NavigationComponent,
+    AwsComponent,
+    ConsultingComponent,
+    ContactUsComponent,
+    CoursesComponent,
+    FaqComponent,
+    IncomeShareAgreementComponent
   ],
   imports: [
     BrowserModule,

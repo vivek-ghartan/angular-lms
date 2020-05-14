@@ -29,9 +29,10 @@
                     <span class="mobile-close"><i class="fa fa-times"></i></span>
                     <div class="stellarnav">
                         <ul class="main-ul">
-                            <li class="active"><a href="">Courses</a></li>
-                            <li><a routerLink="corporate">Corporate</a></li>
-                            <li><a href="">Consulting</a>
+                            <li [ngClass]="{'active' : path === 'courses'}"><a routerLink="courses">Courses</a></li>
+                            <li [ngClass]="{'active' : path === 'corporate'}"><a routerLink="corporate">Corporate</a>
+                            </li>
+                            <li [ngClass]="{'active' : path === 'consulting'}"><a routerLink="consulting">Consulting</a>
                                 <!--<ul>
                                       <li><a href="">WEB DESIGN</a>
                                         <ul>
@@ -40,9 +41,10 @@
                                       </li>
                                 </ul> -->
                             </li>
-                            <li><a routerLink="about-us">About Us </a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">FAQ</a></li>
+                            <li [ngClass]="{'active' : path === 'about-us'}"><a routerLink="about-us">About Us </a></li>
+                            <li [ngClass]="{'active' : path === 'contact-us'}"><a routerLink="contact-us">Contact Us
+                                </a></li>
+                            <li [ngClass]="{'active' : path === 'faq'}"><a routerLink="faq">FAQ</a></li>
                             <li class="nav-login"><a href="" class="nav-login-btn">Login</a></li>
                         </ul>
                     </div>
