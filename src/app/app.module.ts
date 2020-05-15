@@ -21,6 +21,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FaqComponent } from './faq/faq.component';
 import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
+import { FormComponent } from './shared/form/form.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { IncomeShareAgreementComponent } from './income-share-agreement/income-s
     ContactUsComponent,
     CoursesComponent,
     FaqComponent,
-    IncomeShareAgreementComponent
+    IncomeShareAgreementComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
