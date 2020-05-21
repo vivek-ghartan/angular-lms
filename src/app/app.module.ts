@@ -22,6 +22,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { FaqComponent } from './faq/faq.component';
 import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
 import { FormComponent } from './shared/form/form.component'
+import { FrontBannerComponent } from './shared/front-banner/front-banner.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import { FormComponent } from './shared/form/form.component'
     CoursesComponent,
     FaqComponent,
     IncomeShareAgreementComponent,
-    FormComponent
+    FormComponent,
+    FrontBannerComponent
   ],
   imports: [
     BrowserModule,
