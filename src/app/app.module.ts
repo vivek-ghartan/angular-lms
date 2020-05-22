@@ -23,6 +23,9 @@ import { FaqComponent } from './faq/faq.component';
 import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
 import { FormComponent } from './shared/form/form.component'
 import { FrontBannerComponent } from './shared/front-banner/front-banner.component';
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
+import { IconCardComponent } from './icon-card/icon-card.component';
+import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,10 @@ import { FrontBannerComponent } from './shared/front-banner/front-banner.compone
     FaqComponent,
     IncomeShareAgreementComponent,
     FormComponent,
-    FrontBannerComponent
+    FrontBannerComponent,
+    SearchBarComponent,
+    IconCardComponent,
+    MentorCardComponent
   ],
   imports: [
     BrowserModule,
@@ -46,9 +52,9 @@ import { FrontBannerComponent } from './shared/front-banner/front-banner.compone
     BrowserAnimationsModule,
     // HttpClientModule,
     // HttpClient,
-    FormsModule,
-    MaterialModule,
     CommonModule,
+    MaterialModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   providers: [],

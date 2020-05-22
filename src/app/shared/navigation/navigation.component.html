@@ -17,11 +17,12 @@
             </div>
             <div class="col-lg-3 col-md-8 col-sm-3 col-9 header-search-col desktop-header-search">
                 <div class="search-form-header">
-                    <form action="" class="search-form">
+                    <!-- <form action="" class="search-form">
                         <input type="text" placeholder="Search for anything" name="search"
                             class="search-input slowHover">
                         <button type="submit" class="search-btn"></button>
-                    </form>
+                    </form> -->
+                    <app-search-bar [label]="'Search for anything'"></app-search-bar>
                 </div>
             </div>
             <div class="col-lg-7 col-md-1 col-sm-9 col-3 navigation-col">
@@ -33,17 +34,10 @@
                             <li [ngClass]="{'active' : path === 'corporate'}"><a routerLink="corporate">Corporate</a>
                             </li>
                             <li [ngClass]="{'active' : path === 'consulting'}"><a routerLink="consulting">Consulting</a>
-                                <!--<ul>
-                                      <li><a href="">WEB DESIGN</a>
-                                        <ul>
-                                          <li><a href="">WEB DESIGN A</a></li>
-                                        </ul>
-                                      </li>
-                                </ul> -->
                             </li>
                             <li [ngClass]="{'active' : path === 'about-us'}"><a routerLink="about-us">About Us </a></li>
-                            <li [ngClass]="{'active' : path === 'contact-us'}"><a routerLink="contact-us">Contact Us
-                                </a></li>
+                            <li [ngClass]="{'active' : path === 'contact-us'}"><a routerLink="contact-us">Contact Us</a>
+                            </li>
                             <li [ngClass]="{'active' : path === 'faq'}"><a routerLink="faq">FAQ</a></li>
                             <li class="nav-login"><a href="" class="nav-login-btn">Login</a></li>
                         </ul>
