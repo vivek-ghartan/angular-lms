@@ -1,0 +1,26 @@
+<div class="item">
+    <div class="best-mentors-box " [ngClass]="{'even-mentor' : isOdd === false, 'odd-mentor' : isOdd === true}">
+        <div class="best-mentors-box-img">
+            <img [src]="avatar">
+            <span class="heart-icon"><i class="far fa-heart"></i></span>
+        </div>
+        <div class="best-mentors-box-content">
+            <h6>Mentor name</h6>
+            <p>Mentor area</p>
+            <div class="best-mentor-bottom">
+                <div class="mentor-stars">
+                    <ul>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star-half-alt"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                    </ul>
+                </div>
+                <div class="mentor-user">
+                    <p><span>(2,048)</span> <i class="fas fa-user"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
