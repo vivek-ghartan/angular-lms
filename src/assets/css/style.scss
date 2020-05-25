@@ -1,4 +1,9 @@
- @font-face {
+$primary: #03A9F4;
+$accent: #9CF6F6;
+$accentTwo: #B5D6D6;
+$highlighter:#E69597;
+
+@font-face {
    font-family: 'Baloo Bhai';
    src: url('^assets/fonts/BalooBhai-Regular.eot');
    src: url('^assets/fonts/BalooBhai-Regular.eot?#iefix') format('embedded-opentype'),
@@ -68,7 +73,7 @@
  }
 
  body {
-   font-family: 'Roboto';
+   font-family: 'Open Sans';
    font-style: normal;
    font-weight: normal;
  }
@@ -110,7 +115,7 @@
    height: 35px;
    text-align: center;
    line-height: 35px;
-   background: #FF7F45;
+   background: $primary;
    border-radius: 50%;
  }
 
@@ -155,11 +160,11 @@
 
  /***Header starts***/
  .header-logo img {
-   width: 180px;
+   width: 11.5rem;
  }
 
  .header {
-   padding: 44px 0 0;
+   padding: 20px 0 0;
  }
 
  .search-form-header {
@@ -177,7 +182,7 @@
  .search-form-header input.search-input {
    width: 100%;
    height: 50px;
-   border: 1px solid #E0E0E0;
+   border: 1px solid $accentTwo;
    border-radius: 50px;
    outline: 0;
    line-height: 50px;
@@ -185,13 +190,11 @@
    background-color: transparent;
    text-align: left;
    font-size: 18px;
-   font-family: Roboto;
    font-weight: 500;
    color: #000;
  }
 
  .search-form-header ::-webkit-input-placeholder {
-   font-family: Roboto;
    font-style: italic;
    font-weight: normal;
    font-size: 18px;
@@ -201,7 +204,6 @@
  }
 
  .search-form-header :-ms-input-placeholder {
-   font-family: Roboto;
    font-style: italic;
    font-weight: normal;
    font-size: 18px;
@@ -211,7 +213,6 @@
  }
 
  .search-form-header ::placeholder {
-   font-family: Roboto;
    font-style: italic;
    font-weight: normal;
    font-size: 18px;
@@ -267,6 +268,7 @@
 
  .navigation-col {
    padding-left: 0;
+   padding-top: 0.4rem;
  }
 
  .stellarnav {
@@ -301,12 +303,11 @@
    -webkit-transition: all .3s ease-out;
    -moz-transition: all .3s ease-out;
    transition: all .3s ease-out;
-   font-family: Roboto;
    font-style: normal;
-   font-weight: bold;
+   font-weight: 500;
    font-size: 18px;
    line-height: 21px;
-   color: #000000;
+   color: $accentTwo;
  }
 
  .mobile-close {
@@ -514,15 +515,19 @@
 
  .stellarnav ul li.active>a,
  .stellarnav ul li a:hover {
-   color: #FF7F45;
+   color: #0091EA;
+ }
+
+ .nav-login-btn{
+   font-size: 1.1rem;
+   padding: 2px 5px;
  }
 
  .stellarnav ul li a.nav-login-btn {
    width: 79px;
    height: 39px;
-   background: #FF7F45;
-   border-radius: 50px;
-   font-family: Roboto;
+   background: #0091EA;
+   border-radius: 2px;
    font-style: normal;
    font-weight: bold;
    font-size: 18px;
@@ -530,14 +535,14 @@
    color: #FFFFFF;
    padding: 0;
    text-align: center;
-   border: 3px solid transparent;
+   border: 3px solid #00B0FF;
  }
 
  .stellarnav ul li a.nav-login-btn:hover,
  .page-courses-cloud-computing .stellarnav ul li a.nav-login-btn:hover {
    background-color: #fff;
-   color: #FF7F45;
-   border-color: #FF7F45;
+   color: #0091EA;
+   border-color:#0091EA;
  }
 
  /* mobile nav */
@@ -710,7 +715,7 @@
  }
 
  .home-banner-left h1 {
-   font-family: Baloo Bhai;
+   /*font-family: Baloo Bhai;*/
    font-style: normal;
    font-weight: normal;
    font-size: 80px;
@@ -724,11 +729,11 @@
 
  .home-banner-left p {
    color: #263238;
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
    line-height: 28px;
+   font-family: 'Open Sans', sans-serif;
    margin: 0;
    padding: 0 100px 0 0;
    text-align: justify;
@@ -741,15 +746,14 @@
  a.common-btn {
    width: 258px;
    height: 60px;
-   background: #FF7F45;
-   -webkit-box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
-   -moz-box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
-   -ms-box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
-   box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.25);
-   border-radius: 50px;
+   background: #03A9F4;
+   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+   -moz-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+   -ms-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+   box-shadow:  0px 6px 6px rgba(0, 0, 0, 0.25);
+   border-radius: 5px;
    display: inline-block;
-   font-family: Roboto;
-   color: #FFFFFF;
+   color: #ECEFF1;
    font-style: normal;
    font-weight: bold;
    font-size: 24px;
@@ -759,9 +763,9 @@
  }
 
  a.common-btn:hover {
-   background-color: #fff;
-   color: #FF7F45;
-   border-color: #FF7F45;
+   background-color: aliceblue;
+   color: $accent;
+   border-color: $accentTwo;
    box-shadow: none;
  }
 
@@ -1832,7 +1836,6 @@
    display: block;
    position: relative;
    padding: 0 0 0 35px;
-   font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -2451,9 +2454,9 @@
 
  /***page-new-home***/
  .page-new-home .home-banner-wrap {
-   background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F2F4F8 21.21%);
-   background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F2F4F8 21.21%);
-   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #F2F4F8 21.21%);
+   background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
+   background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
  }
 
  .page-new-home .home-banner {
@@ -2509,7 +2512,6 @@
    display: inline-block;
    width: 70px;
    height: 70px;
-   font-family: Roboto;
    font-style: normal;
    font-weight: 500;
    font-size: 34px;
@@ -2556,13 +2558,12 @@
  }
 
  .career-path-content h4 {
-   font-family: Roboto;
    font-style: normal;
    font-weight: 500;
    font-size: 22px;
    line-height: 26px;
    text-align: center;
-   color: #FF7F45;
+   color: #03A9F4;
    margin: 0 0 25px;
  }
 

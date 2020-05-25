@@ -1,6 +1,9 @@
 <form>
-    <mat-form-field appearance="outline">
+    <mat-form-field mat-line="1" >
         <mat-label>{{label}}</mat-label>
-        <input type="text" matInput [formControl]="myControl">
+        <input type="search" matInput  [formControl]="myControl">
+        <button mat-icon-button matSuffix >
+          <mat-icon size="20px">search</mat-icon>
+       </button>
     </mat-form-field>
 </form>

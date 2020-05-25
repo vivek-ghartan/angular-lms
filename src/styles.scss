@@ -4,7 +4,7 @@
 // @import url(../src/assets/css/fontawesome.min.css);
 // @import url(../src/assets/css/owl.carousel.min.css);
 // @import url(../src/assets/css/owl.theme.default.min.css);
-@import url(../src/assets/css/style.css);
+@import url(assets/css/style.scss);
 
 html,
 body {
@@ -13,5 +13,5 @@ body {
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }

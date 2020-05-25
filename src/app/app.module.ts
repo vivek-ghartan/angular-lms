@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './shared/footer/footer.component';
 
-//import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../app/material.module';
 import { CommonModule } from '@angular/common';
@@ -26,6 +26,7 @@ import { FrontBannerComponent } from './shared/front-banner/front-banner.compone
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { IconCardComponent } from './icon-card/icon-card.component';
 import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,12 +45,13 @@ import { MentorCardComponent } from './shared/mentor-card/mentor-card.component'
     FrontBannerComponent,
     SearchBarComponent,
     IconCardComponent,
-    MentorCardComponent
+    MentorCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
     // HttpClientModule,
     // HttpClient,
     CommonModule,
