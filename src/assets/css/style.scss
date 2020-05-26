@@ -15,6 +15,8 @@ $highlighter:#E69597;
    font-style: normal;
  }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;531;600;800&display=swap');
+
  @font-face {
    font-family: 'Roboto';
    src: url('^assets/fonts/Roboto-Medium.eot');
@@ -24,7 +26,7 @@ $highlighter:#E69597;
      url('^assets/fonts/Roboto-Medium.ttf') format('truetype'),
      url('^assets/fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
    font-weight: 500;
-   font-style: normal;
+   font-style: normal
  }
 
  @font-face {
@@ -828,29 +830,34 @@ $highlighter:#E69597;
  }
 
  .home-heading-double {
-   font-family: Baloo Bhai;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: normal;
-   font-size: 80px;
-   line-height: 80px;
+
    text-align: right;
-   margin: 0 0 55px;
  }
 
  .home-heading-double .hhd-top {
+   font-size: 4rem;
+   line-height: 4rem;
    display: block;
-   background: -webkit-gradient(linear, left top, right top, from(#68c3d3), to(#67c1e2));
-   background: linear-gradient(to top, #68c3d3 0%, #67c1e2 100%);
+   background-color: #E69597;
+   //background: -webkit-gradient(linear, left top, right top, from(#68c3d3), to(#67c1e2));
+   //background: linear-gradient(to top, #68c3d3 0%, #67c1e2 100%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+
  }
 
  .home-heading-double .hhd-bottom {
    display: block;
+   font-size: 2rem;
+   line-height: 2rem;
    background: -webkit-gradient(linear, left top, right top, from(#67c1e0), to(#67beeb));
    background: linear-gradient(to top, #67c1e0 0%, #67beeb 100%);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
+   margin: 0 0 2rem;
  }
 
  .home-advantage-right {

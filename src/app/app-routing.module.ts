@@ -9,6 +9,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FaqComponent } from './faq/faq.component';
 import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
+import {RegisterComponent} from './register/register.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomepageComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'courses', component: CoursesComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'income-share-agreement', component: IncomeShareAgreementComponent },
+  { path: 'register', component: RegisterComponent }
 ];
 
 @NgModule({
