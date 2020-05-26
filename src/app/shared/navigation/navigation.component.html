@@ -26,16 +26,19 @@
                     <div class="stellarnav">
                         <ul class="main-ul">
                             <li [ngClass]="{'active' : path === 'courses'}"><a routerLink="courses">Individuals</a></li>
+                          <li>
+                          <a routerLink="corporate" [matMenuTriggerFor]="corpMenu">Companies</a>
+                          <mat-menu #corpMenu="matMenu">
+                            <a mat-menu-item routerLink="corporate">Training</a>
+                            <a mat-menu-item routerLink="consulting">Consulting</a>
+                            <a mat-menu-item routerLink="development">Product Development</a>
+                            <a mat-menu-item routerLink="quality">Quality Assurance</a>
+                            <a mat-menu-item routerLink="faq">FAQ</a>
+                          </mat-menu>
+                          </li>
 
-                            <li [ngClass]="{'active' : path === 'corporate'}"><a routerLink="corporate">Corporate</a>
-                            </li>
-                            <li [ngClass]="{'active' : path === 'consulting'}"><a routerLink="consulting">Consulting</a>
-                            </li>
-                            <li [ngClass]="{'active' : path === 'about-us'}"></li>
-                            <li [ngClass]="{'active' : path === 'contact-us'}">
-                            </li>
                             <li>
-                              <a routerLink="corporate" [matMenuTriggerFor]="corpMenu">Connect</a>
+                              <a routerLink="corporate" [matMenuTriggerFor]="corpMenu">We</a>
                               <mat-menu #corpMenu="matMenu">
                                 <a mat-menu-item routerLink="about-us">About Us </a>
                                 <a mat-menu-item routerLink="contact-us">Contact Us</a>

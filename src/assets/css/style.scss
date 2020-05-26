@@ -839,7 +839,7 @@ $highlighter:#E69597;
 
  .home-heading-double .hhd-top {
    font-size: 4rem;
-   line-height: 4rem;
+   line-height: 5rem;
    display: block;
    background-color: #E69597;
    //background: -webkit-gradient(linear, left top, right top, from(#68c3d3), to(#67c1e2));
@@ -852,7 +852,7 @@ $highlighter:#E69597;
  .home-heading-double .hhd-bottom {
    display: block;
    font-size: 2rem;
-   line-height: 2rem;
+   line-height: 2.5rem;
    background: -webkit-gradient(linear, left top, right top, from(#67c1e0), to(#67beeb));
    background: linear-gradient(to top, #67c1e0 0%, #67beeb 100%);
    -webkit-background-clip: text;
@@ -936,17 +936,14 @@ $highlighter:#E69597;
  }
 
  .home-heading-single {
-   font-family: Baloo Bhai;
+   font-family: "Open Sans";
    font-style: normal;
-   font-weight: normal;
-   font-size: 80px;
-   line-height: 80px;
+   font-weight: 400;
+   font-size: 4rem;
+   line-height: 5rem;
    margin: 0 0 55px;
-   background: -webkit-gradient(linear, left top, right top, from(#67c1e0), to(#67beeb));
-   -moz-background: linear-gradient(to top, #67c1e0 0%, #67beeb 100%);
-   background: linear-gradient(to top, #67c1e0 0%, #67beeb 100%);
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+  color: #03A9F4;
  }
 
  .hl-img img {
@@ -2525,7 +2522,7 @@ $highlighter:#E69597;
    line-height: 70px;
    text-align: center;
    text-transform: uppercase;
-   color: #1CABA0;
+   color: #03A9F4;
    justify-content: center;
  }
 
@@ -2565,6 +2562,7 @@ $highlighter:#E69597;
  }
 
  .career-path-content h4 {
+   font-family: 'Open Sans', sans-serif;
    font-style: normal;
    font-weight: 500;
    font-size: 22px;
@@ -2575,7 +2573,7 @@ $highlighter:#E69597;
  }
 
  .career-path-content p {
-   font-family: Roboto;
+   font-family: 'Open Sans', sans-serif;
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -2609,11 +2607,12 @@ $highlighter:#E69597;
  }
 
  .new-home-consulting-services {
+   background-color: #F2F2F2;
    padding: 150px 0 120px;
  }
 
  .new-home-consulting-services-bottom p {
-   font-family: Roboto;
+   font-family:"Open Sans";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -2643,7 +2642,7 @@ $highlighter:#E69597;
    position: absolute;
    right: 0;
    bottom: 0;
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: bold;
    font-size: 18px;
@@ -2670,7 +2669,7 @@ $highlighter:#E69597;
  }
 
  .new-home-courses-top p {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
