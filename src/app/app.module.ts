@@ -27,6 +27,7 @@ import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { IconCardComponent } from './icon-card/icon-card.component';
 import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
 import { MatButtonModule } from '@angular/material/button';
+import {RegisterModule} from './register/register.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,8 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RegisterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
