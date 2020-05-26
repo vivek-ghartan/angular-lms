@@ -25,9 +25,9 @@
                     <span class="mobile-close"><i class="fa fa-times"></i></span>
                     <div class="stellarnav">
                         <ul class="main-ul">
-                            <li [ngClass]="{'active' : path === 'courses'}"><a routerLink="courses">Individuals</a></li>
-                          <li>
-                          <a routerLink="corporate" [matMenuTriggerFor]="corpMenu">Companies</a>
+                          <li [ngClass]="{'active' : path === 'courses'}"><a routerLink="courses">Individuals</a></li>
+                          <li  [ngClass]="{'active' : path === 'companies'}">
+                          <a href="javascript:none" [matMenuTriggerFor]="corpMenu">Companies</a>
                           <mat-menu #corpMenu="matMenu">
                             <a mat-menu-item routerLink="corporate">Training</a>
                             <a mat-menu-item routerLink="consulting">Consulting</a>
@@ -38,16 +38,21 @@
                           </li>
 
                             <li>
-                              <a routerLink="corporate" [matMenuTriggerFor]="corpMenu">We</a>
+                              <a href="javascript:none" [matMenuTriggerFor]="corpMenu">We</a>
                               <mat-menu #corpMenu="matMenu">
                                 <a mat-menu-item routerLink="about-us">About Us </a>
                                 <a mat-menu-item routerLink="contact-us">Contact Us</a>
                                 <a mat-menu-item routerLink="faq">FAQ</a>
                               </mat-menu>
                             </li>
-<!--                            <li [ngClass]="{'active' : path === 'faq'}"><a routerLink="faq">FAQ</a></li>-->
-                            <li class="nav-login"><a href="#" mat-button  color="primary" >Login</a></li>
-                            <li class="nav-login"><a href="#" mat-button >Sign Up</a></li>
+
+                            <div style="margin-left: 3rem" class="btn-group" role="group">
+                              <a type="button" mat-stroked-button class="btn btn-outline-primary">Log In</a>
+                              <a type="button" mat-stroked-button class="btn btn-outline-primary">Register</a>
+                            </div>
+<!--                             <li class="nav-login"><a href="#" >Login</a></li>-->
+
+<!--                            <li class="nav-login"><a href="#"  >Sign Up</a></li>-->
                         </ul>
                     </div>
                     <!--stellarnav-->

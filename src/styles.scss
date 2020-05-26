@@ -4,6 +4,13 @@
 // @import url(../src/assets/css/fontawesome.min.css);
 // @import url(../src/assets/css/owl.carousel.min.css);
 // @import url(../src/assets/css/owl.theme.default.min.css);
+$primay : #03A9F4;
+$accent: #9CF6F6;
+$accentTwo: #B5D6D6;
+$highlighter:#E69597;
+@mixin heading {
+
+}
 @import url(assets/css/style.scss);
 
 html,
@@ -15,3 +22,27 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
+
+.best-mentors-top {
+  font-family: "Open Sans";
+  .learning-path-heading {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 80px;
+    text-transform: capitalize;
+    color: #03A9F4;
+    margin: 0 0 30px;
+  }
+  p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    color: #263238;
+    margin: 0 0 50px;
+  }
+}
+
