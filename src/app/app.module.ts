@@ -21,7 +21,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FaqComponent } from './faq/faq.component';
 import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
-import { FormComponent } from './shared/form/form.component'
+import { FormComponent } from './shared/contact-us-form/form.component';
 import { FrontBannerComponent } from './shared/front-banner/front-banner.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { IconCardComponent } from './icon-card/icon-card.component';
