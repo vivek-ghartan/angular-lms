@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+// @import url(../src/assets/css/all.min.css);
+// @import url(../src/assets/css/bootstrap.min.css);
+// @import url(../src/assets/css/fontawesome.min.css);
+// @import url(../src/assets/css/owl.carousel.min.css);
+// @import url(../src/assets/css/owl.theme.default.min.css);
+@import url(assets/css/style.scss);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
