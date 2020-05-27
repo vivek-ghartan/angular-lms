@@ -23,11 +23,12 @@ import { FaqComponent } from './faq/faq.component';
 import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
 import { FormComponent } from './shared/contact-us-form/form.component';
 import { FrontBannerComponent } from './shared/front-banner/front-banner.component';
+import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { IconCardComponent } from './icon-card/icon-card.component';
-import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
 import { MatButtonModule } from '@angular/material/button';
-import {RegisterModule} from './register/register.module';
+import { RegisterModule } from './register/register.module';
+import { CourseCardComponent } from './course-card/course-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +48,7 @@ import {RegisterModule} from './register/register.module';
     SearchBarComponent,
     IconCardComponent,
     MentorCardComponent,
+    CourseCardComponent,
   ],
   imports: [
     BrowserModule,
