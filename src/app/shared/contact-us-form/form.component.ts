@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-
+  selected = 'option0';
   constructor() { }
 
   ngOnInit(): void {
