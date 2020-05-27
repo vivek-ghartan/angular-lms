@@ -84,15 +84,17 @@ $highlighter:#E69597;
  .website-wrap {
    width: 100%;
    margin: auto;
+
  }
 
  /***home-banner-wrap***/
  .home-banner-wrap {
-   background: -webkit-linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
-   background:
-     -moz-linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
-   background: -ms-linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
-   background: linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
+   background-color: #eeeeee;
+   //background: -webkit-linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
+   //background:
+   //  -moz-linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
+   //background: -ms-linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
+   //background: linear-gradient(180deg, #F2F2F2 0%, #E2E2E2 17.19%);
    position: relative;
  }
 
@@ -109,7 +111,7 @@ $highlighter:#E69597;
  }
 
  .header {
-   padding: 20px 0 0;
+   padding: 5px 0 0;
  }
 
  .search-form-header {
@@ -812,7 +814,7 @@ $highlighter:#E69597;
 
  .home-advantage-right p,
  .home-statistics-left p {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: normal;
    font-size: 18px;
@@ -833,13 +835,13 @@ $highlighter:#E69597;
  }
 
  .hsc-counters h4 {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: 500;
    font-size: 72px;
    line-height: 84px;
    text-align: center;
-   color: #FF7F45;
+   color: #eb6e34;
    position: relative;
    display: inline-block;
    left: -25px;
@@ -850,7 +852,7 @@ $highlighter:#E69597;
    position: absolute;
    top: 0;
    right: -50px;
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: 500;
    font-size: 72px;
@@ -859,12 +861,12 @@ $highlighter:#E69597;
  }
 
  .hsc-counters p {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: 500;
    font-size: 16px;
    line-height: 26px;
-   color: #FF7F45;
+   color: #eb6e34;
    text-align: center;
  }
 
@@ -881,8 +883,8 @@ $highlighter:#E69597;
    font-family: "Open Sans";
    font-style: normal;
    font-weight: 400;
-   font-size: 4rem;
-   line-height: 5rem;
+   font-size: 3rem;
+   line-height: 4rem;
    margin: 0 0 55px;
    -webkit-background-clip: text;
   color: #2075D7;
@@ -2390,9 +2392,9 @@ $highlighter:#E69597;
 
  /***page-new-home***/
  .page-new-home .home-banner-wrap {
-   background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
-   background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
-   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
+   //background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
+   //background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
+   //background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #faf9f9 21.21%);
  }
 
  .page-new-home .home-banner {
@@ -2400,7 +2402,7 @@ $highlighter:#E69597;
  }
 
  .page-new-home .home-banner-right img {
-   top: 100px;
+   top: 0rem;
  }
 
  .page-new-home .banner-btn {
