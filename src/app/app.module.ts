@@ -28,6 +28,7 @@ import { IconCardComponent } from './icon-card/icon-card.component';
 import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
 import { MatButtonModule } from '@angular/material/button';
 import {RegisterModule} from './register/register.module';
+import { CourseCardComponent } from './course-card/course-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +48,7 @@ import {RegisterModule} from './register/register.module';
     SearchBarComponent,
     IconCardComponent,
     MentorCardComponent,
+    CourseCardComponent,
   ],
   imports: [
     BrowserModule,
