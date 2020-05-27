@@ -28,7 +28,7 @@
                         <ul class="main-ul">
                           <li [ngClass]="{'active' : path === 'courses'}"><a routerLink="courses">Individuals</a></li>
                           <li  [ngClass]="{'active' : path === 'companies'}">
-                          <a href="javascript:none" [matMenuTriggerFor]="corpMenu">Companies</a>
+                          <a href="javascript:none" [matMenuTriggerFor]="corpMenu">for Companies</a>
                           <mat-menu #corpMenu="matMenu">
                             <a mat-menu-item routerLink="corporate">Training</a>
                             <a mat-menu-item routerLink="consulting">Consulting</a>
