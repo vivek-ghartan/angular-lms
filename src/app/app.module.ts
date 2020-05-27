@@ -29,6 +29,8 @@ import { IconCardComponent } from './icon-card/icon-card.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RegisterModule } from './register/register.module';
 import { CourseCardComponent } from './course-card/course-card.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +51,8 @@ import { CourseCardComponent } from './course-card/course-card.component';
     IconCardComponent,
     MentorCardComponent,
     CourseCardComponent,
+    TestimonialsComponent,
+    TestimonialCardComponent,
   ],
   imports: [
     BrowserModule,
