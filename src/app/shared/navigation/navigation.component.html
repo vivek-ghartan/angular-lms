@@ -10,18 +10,14 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3 col-sm-3 col-9 header-logo-col">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-sm-12 col-xs-12 header-logo-col">
                 <div class="header-logo">
-                    <a href=""><img src="assets/images/logo.png" width="180" alt=""></a>
+                    <a href=""><img src="assets/images/logo.svg"  alt=""></a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-8 col-sm-3 col-9 header-search-col desktop-header-search">
+            <div class="col-lg-2 col-md-3 col-sm-3  col-9 header-search-col desktop-header-search">
                 <div class="search-form-header">
-                    <form action="" class="search-form">
-                        <input type="text" placeholder="Search for anything" name="search"
-                            class="search-input slowHover">
-                        <button type="submit" class="search-btn"></button>
-                    </form>
+                    <app-search-bar [label]="'Search Programs'"></app-search-bar>
                 </div>
             </div>
             <div class="col-lg-7 col-md-1 col-sm-9 col-3 navigation-col">
@@ -29,23 +25,29 @@
                     <span class="mobile-close"><i class="fa fa-times"></i></span>
                     <div class="stellarnav">
                         <ul class="main-ul">
-                            <li [ngClass]="{'active' : path === 'courses'}"><a routerLink="courses">Courses</a></li>
-                            <li [ngClass]="{'active' : path === 'corporate'}"><a routerLink="corporate">Corporate</a>
+                            <li [ngClass]="{'active' : path === 'courses'}"><a routerLink="courses">Individuals</a></li>
+                          <li>
+                          <a routerLink="corporate" [matMenuTriggerFor]="corpMenu">Companies</a>
+                          <mat-menu #corpMenu="matMenu">
+                            <a mat-menu-item routerLink="corporate">Training</a>
+                            <a mat-menu-item routerLink="consulting">Consulting</a>
+                            <a mat-menu-item routerLink="development">Product Development</a>
+                            <a mat-menu-item routerLink="quality">Quality Assurance</a>
+                            <a mat-menu-item routerLink="faq">FAQ</a>
+                          </mat-menu>
+                          </li>
+
+                            <li>
+                              <a routerLink="corporate" [matMenuTriggerFor]="corpMenu">We</a>
+                              <mat-menu #corpMenu="matMenu">
+                                <a mat-menu-item routerLink="about-us">About Us </a>
+                                <a mat-menu-item routerLink="contact-us">Contact Us</a>
+                                <a mat-menu-item routerLink="faq">FAQ</a>
+                              </mat-menu>
                             </li>
-                            <li [ngClass]="{'active' : path === 'consulting'}"><a routerLink="consulting">Consulting</a>
-                                <!--<ul>
-                                      <li><a href="">WEB DESIGN</a>
-                                        <ul>
-                                          <li><a href="">WEB DESIGN A</a></li>
-                                        </ul>
-                                      </li>
-                                </ul> -->
-                            </li>
-                            <li [ngClass]="{'active' : path === 'about-us'}"><a routerLink="about-us">About Us </a></li>
-                            <li [ngClass]="{'active' : path === 'contact-us'}"><a routerLink="contact-us">Contact Us
-                                </a></li>
-                            <li [ngClass]="{'active' : path === 'faq'}"><a routerLink="faq">FAQ</a></li>
-                            <li class="nav-login"><a href="" class="nav-login-btn">Login</a></li>
+<!--                            <li [ngClass]="{'active' : path === 'faq'}"><a routerLink="faq">FAQ</a></li>-->
+                            <li class="nav-login"><a href="#" mat-button  color="primary" >Login</a></li>
+                            <li class="nav-login"><a href="#" mat-button >Sign Up</a></li>
                         </ul>
                     </div>
                     <!--stellarnav-->

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './shared/footer/footer.component';
 
-//import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../app/material.module';
 import { CommonModule } from '@angular/common';
@@ -21,9 +21,14 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FaqComponent } from './faq/faq.component';
 import { IncomeShareAgreementComponent } from './income-share-agreement/income-share-agreement.component';
-import { FormComponent } from './shared/form/form.component'
+import { FormComponent } from './shared/contact-us-form/form.component';
 import { FrontBannerComponent } from './shared/front-banner/front-banner.component';
 import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
+import { SearchBarComponent } from './shared/search-bar/search-bar.component';
+import { IconCardComponent } from './icon-card/icon-card.component';
+import { MatButtonModule } from '@angular/material/button';
+import { RegisterModule } from './register/register.module';
+import { CourseCardComponent } from './course-card/course-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,18 +45,23 @@ import { MentorCardComponent } from './shared/mentor-card/mentor-card.component'
     IncomeShareAgreementComponent,
     FormComponent,
     FrontBannerComponent,
-    MentorCardComponent
+    SearchBarComponent,
+    IconCardComponent,
+    MentorCardComponent,
+    CourseCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatButtonModule,
     // HttpClientModule,
     // HttpClient,
-    FormsModule,
-    MaterialModule,
     CommonModule,
-    ReactiveFormsModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RegisterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

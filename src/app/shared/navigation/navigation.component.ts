@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-navigation',
@@ -8,6 +9,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
   path: any;
+  myControl = new FormControl();
 
   constructor(
     private router: Router
@@ -16,14 +18,12 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        //console.log('event', event);
         this.handleHeaderColorChange(event.url);
       }
-    })
+    });
   }
   handleHeaderColorChange(url) {
     this.path = url.split('/')[1];
-    console.log('path', this.path);
   }
 
 }
