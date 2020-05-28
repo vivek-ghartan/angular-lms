@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './shared/footer/footer.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../app/material.module';
@@ -31,7 +31,7 @@ import { RegisterModule } from './register/register.module';
 import { CourseCardComponent } from './course-card/course-card.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
-import {SharedModule} from './shared/shared.module';
+import { SharedModule } from './shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,6 +64,7 @@ import {SharedModule} from './shared/shared.module';
     FormsModule,
     ReactiveFormsModule,
     RegisterModule,
+    CarouselModule,
     SharedModule
   ],
   providers: [],
