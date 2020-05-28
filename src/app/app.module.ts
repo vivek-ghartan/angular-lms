@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './shared/footer/footer.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../app/material.module';
@@ -61,7 +61,8 @@ import { CourseCardComponent } from './course-card/course-card.component';
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    RegisterModule
+    RegisterModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
