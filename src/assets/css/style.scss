@@ -2223,7 +2223,7 @@ $highlighter:#E69597;
  }
 
  .test-client-details h4 {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: bold;
    font-size: 24px;
@@ -2234,7 +2234,7 @@ $highlighter:#E69597;
  }
 
  .test-client-details p {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: 500;
    font-size: 18px;
@@ -2252,7 +2252,7 @@ $highlighter:#E69597;
  }
 
  .view-more-btn-link {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: 500;
    font-size: 24px;
@@ -2364,7 +2364,7 @@ $highlighter:#E69597;
  }
 
  .download-course-link {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: 900;
    font-size: 24px;
@@ -2515,7 +2515,7 @@ $highlighter:#E69597;
  }
 
  .watch-video a {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: bold;
    font-size: 18px;
@@ -2538,8 +2538,8 @@ $highlighter:#E69597;
  }
 
  .new-home-consulting-services {
-   background-color: #F2F2F2;
-   padding: 150px 0 120px;
+   //background-color: #F2F2F2;
+   //padding: 150px 0 120px;
  }
 
  .new-home-consulting-services-bottom p {
@@ -2558,7 +2558,7 @@ $highlighter:#E69597;
  }
 
  .new-home-placement {
-   padding: 160px 0 80px;
+   padding: 20px 0 20px;
  }
 
  .new-home-placement .home-heading-double {
@@ -2592,7 +2592,8 @@ $highlighter:#E69597;
  }
 
  .new-home-courses {
-   padding: 180px 0 100px;
+   padding: 30px 0 100px;
+   background: rgba(238,238,238,0.5);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -2818,9 +2819,9 @@ $highlighter:#E69597;
 
 
  .best-mentors-box {
-   background: -webkit-linear-gradient(180deg, #67C5C7 0%, rgba(146, 205, 252, 0) 100%);
-   background: -moz-linear-gradient(180deg, #67C5C7 0%, rgba(146, 205, 252, 0) 100%);
-   background: linear-gradient(180deg, #67C5C7 0%, rgba(146, 205, 252, 0) 100%);
+   background: -webkit-linear-gradient(180deg, #2075D7 0%, rgba(146, 205, 252, 0) 100%);
+   background: -moz-linear-gradient(180deg,  #2075D7 0%, rgba(146, 205, 252, 0) 100%);
+   background: linear-gradient(180deg,  #2075D7 0%, rgba(146, 205, 252, 0) 100%);
    position: relative;
  }
 
@@ -2845,7 +2846,7 @@ $highlighter:#E69597;
  }
 
  .best-mentors-box-content h5 {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: 500;
    font-size: 16px;
@@ -2855,7 +2856,7 @@ $highlighter:#E69597;
  }
 
  .best-mentors-box-content p {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: normal;
    font-size: 10px;
@@ -2896,7 +2897,7 @@ $highlighter:#E69597;
  }
 
  .mentor-user p span {
-   font-family: Roboto;
+   font-family: "Open Sans";
    font-style: normal;
    font-weight: normal;
    font-size: 10px;
@@ -2988,6 +2989,7 @@ $highlighter:#E69597;
 
  .new-home-industry-expert {
    padding: 50px 0;
+   background: rgba(238,238,238,0.5);
  }
 
  .project-training-row {
