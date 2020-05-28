@@ -25,12 +25,13 @@ import { FormComponent } from './shared/contact-us-form/form.component';
 import { FrontBannerComponent } from './shared/front-banner/front-banner.component';
 import { MentorCardComponent } from './shared/mentor-card/mentor-card.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
-import { IconCardComponent } from './icon-card/icon-card.component';
+import { IconCardComponent } from './shared/icon-card/icon-card.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RegisterModule } from './register/register.module';
 import { CourseCardComponent } from './course-card/course-card.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
+import {SharedModule} from './shared/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +49,6 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     FormComponent,
     FrontBannerComponent,
     SearchBarComponent,
-    IconCardComponent,
     MentorCardComponent,
     CourseCardComponent,
     TestimonialsComponent,
@@ -58,14 +58,13 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    // HttpClientModule,
     // HttpClient,
     CommonModule,
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    RegisterModule
+    RegisterModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
